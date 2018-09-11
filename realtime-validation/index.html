@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div class="name">
+    <label>アカウント</label>
+    <input class="require-text" type="text" placeholder="４文字以上８文字以内で入力してください">
+    <ul>
+      <li style="display: none;" data-error="required">必須項目です</li>
+      <li style="display: none;" data-error="minlength">４文字以上で入力してください</li>
+      <li style="display: none;" data-error="maxlength">８文字以内で入力してください</li>
+    </ul>
+  </div>
+  <div class="password">
+    <label>パスワード</label>
+    <input class="require-text" type="text" placeholder="４文字以上８文字以内で入力してください">
+    <ul>
+      <li style="display: none;" data-error="required">必須項目です</li>
+      <li style="display: none;" data-error="minlength">４文字以上で入力してください</li>
+      <li style="display: none;" data-error="maxlength">８文字以内で入力してください</li>
+    </ul> 
+  </div>
+  <script src="./script-es6.js"></script>
+</body>
+</html>
