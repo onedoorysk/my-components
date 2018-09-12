@@ -1,0 +1,53 @@
+@charset 'utf-8';
+
+.container {
+  margin: 200px auto 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-container {
+  margin-bottom: 20px;
+}
+.bar-container {
+  width: 550px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 500px;
+  height: 50px;
+  background-color: rgba(91, 91, 91, 0.1);
+  border-radius: 10px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.progress-gage {
+  width: 0%;
+  height: 100%;
+  background-color: #05d343;
+  border-radius: 10px;
+  transition-property: width;
+  transition-duration: 1.0s;
+  transition-timing-function: ease;
+  transition-delay: 0.3s;
+}
+
+.percent-number-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+}
+
+.percent-number {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-right: 2px;
+}
